@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beipoa - Modern eCommerce Store</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Beipoa</h1>
+                </div>
+                
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="shop.php">Shop</a></li>
+                        <li><a href="categories.php">Categories</a></li>
+                        <li><a href="deals.php">Deals</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search products..." id="searchInput">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                    
+                    <div class="user-menu">
+                        <i class="fas fa-user"></i>
+                        <div class="dropdown">
+                            <a href="login.php">Login</a>
+                            <a href="register.php">Register</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <div class="container">
+                        <h1 class="hero-title">Promo Deals up to 50% Off</h1>
+                        <p class="hero-subtitle">Discover amazing products at unbeatable prices</p>
+                        <a href="#featured-products" class="btn btn-primary shop-now-btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="hero-bg" style="background-image: url('assets/images/hero-bg-1.jpg')"></div>
+            </div>
+            
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <div class="container">
+                        <h1 class="hero-title">Latest Electronics Collection</h1>
+                        <p class="hero-subtitle">Tech that transforms your world</p>
+                        <a href="#featured-products" class="btn btn-primary shop-now-btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="hero-bg" style="background-image: url('assets/images/hero-bg-2.jpg')"></div>
+            </div>
+        </div>
+        
+        <div class="hero-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+        </div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid" id="featuredProductsGrid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Most Loved Products -->
+    <section class="most-loved-products">
+        <div class="container">
+            <h2 class="section-title">Most Loved Products</h2>
+            <div class="products-carousel" id="mostLovedCarousel">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Beipoa</h3>
+                    <p>Your trusted online marketplace for quality products at affordable prices.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.php">Shop</a></li>
+                        <li><a href="categories.php">Categories</a></li>
+                        <li><a href="deals.php">Deals</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beipoa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
